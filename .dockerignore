@@ -1,0 +1,6 @@
+env
+staticfiles
+
+.gitignore
+*.sqlite3
+*.yml
