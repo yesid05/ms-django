@@ -1,9 +1,0 @@
-
-/env
-/staticfiles
-.idea
-
-*.sqlite3
-*.yml
-.dockerignore
-.gitignore
