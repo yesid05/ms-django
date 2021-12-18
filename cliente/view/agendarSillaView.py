@@ -45,8 +45,8 @@ class AgendarSillaView(APIView):
         #return Response({"msg":"ok"})
 
     def get(self, request, format=None):
-        unIdUsuario = request.GET.get('usuario') #despliegue
-        #unIdUsuario = request.data['usuario'] #postman
+        #unIdUsuario = request.GET.get('usuario') #despliegue
+        unIdUsuario = request.data['usuario'] #postman
 
         objUsuario = User.objects.get(username=unIdUsuario)
 
