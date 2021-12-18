@@ -7,7 +7,6 @@ from rest_framework import routers
 
 
 router = routers.SimpleRouter()
-#router.register(r'agendar-silla', AgendarSillaView.as_view())
 router.register(r'ruta', RutaView)
 router.register(r'silla',SillaView)
 

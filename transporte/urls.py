@@ -15,15 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-#from acceso.view import inicioSesion
-from acceso.views import AccesoView
-from django.views.decorators.csrf import csrf_exempt
+from acceso.view.accesoView import AccesoView
+from acceso.view.registroView import RegistroView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-rest/', include('cliente.url')),
     path('acceso/',AccesoView.as_view()),
-    #path('acceso/',inicioSesion.ingresar),
-    #path('registrarse/',inicioSesion.registrarse),
-    #path('salir/', inicioSesion.cerrar),
+    path('registro/',RegistroView.as_view()),
 ]
